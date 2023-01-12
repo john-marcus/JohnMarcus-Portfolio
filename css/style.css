@@ -1,0 +1,95 @@
+html, body, h1, p {
+    padding: 0;
+    margin: 0;
+}
+
+figure {
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* styles */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+    padding-bottom: 1em;
+}
+
+p {
+  padding-bottom: 1em;
+    line-height: 1.3;
+}
+
+
+p:last-child{
+    padding-bottom: 0;
+}
+
+.images{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1em;
+    
+    
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.item-1{
+    grid-column: 1 / span 2;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    position: fixed;
+    right: 2em;
+    bottom: 2em;
+}
+
+.btn a {
+    color: white;
+    background-color: black;
+    
+    padding: 10px 20px;
+    border-radius: 10px;
+    
+    transition: all 0.5s;
+}
+
+.btn a:hover{
+    background-color: blueviolet;
+    border-radius: 20px
+}
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: yellow url('../img/Toilette.jpg')
+    no-repeat center center;
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.intro h1 {
+    color: white;
+}
