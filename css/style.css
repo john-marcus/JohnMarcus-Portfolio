@@ -221,19 +221,28 @@ p:last-child{
 
 .Mode-1{
     margin: 20px;
-    padding-top: 60px;
+   
+    grid-column: 1/ span 1;
+    grid-row: 1/ span 1;
 }
 
 .Mode-2{
     margin: 20px;
+  
+    grid-column: 2/ span 1;
+    grid-row: 1/ span 1;
 }
 
 .Mode-3{
     margin: 20px;
+    grid-column: 1/ span 1;
+    grid-row: 2/ span 1;
 }
 
 .Mode-4{
     margin: 20px;
+    grid-column: 2/ span 1;
+    grid-row: 2/ span 1;
 }
 
 .Homies {
@@ -278,6 +287,7 @@ p:last-child{
     transition: all 0.5s;
     width: 20%;
     grid-column: 2/ span 1;
+    margin: 20px;
 }
 
 
@@ -290,6 +300,14 @@ p:last-child{
     display: grid;
     grid-template-columns: repeat (3/1fr);
         padding-top: 60px;
+    padding-left: 30px;
+}
+.Modeimages {
+    display: grid;
+    grid-template-columns: repeat (2/1fr);
+    grid-template-rows: repeat (2/1fr);
+    padding-top: 60px;
+    padding-left: 30px;
 }
 
 .intro2 {
@@ -329,20 +347,43 @@ p:last-child{
     display: grid;
     grid-template-rows: repeat (3/1fr);
         padding-top: 60px;
+    grid-column: 1/ span 3;
+   
 }   
     
     .Natur-1 {
         grid-row: 1/ span 1;
+        grid-column: 1/ span 3;
     }    
     
     .Natur-2 {
         grid-row: 2/ span 1;
+        grid-column: 1/ span 3;
     }
     .Natur-3 {
         grid-row: 3/ span 1;
-        
+        grid-column: 1/ span 3;
     }
-    
+    .Modeimages {
+      grid-template-rows: repeat (4/1fr);
+        
+        }
+    .Mode-1 {
+        grid-row: 1/ span 1;
+       grid-column: 1/ span 2;
+    }
+    .Mode-2 {
+        grid-row: 2/ span 1;
+        grid-column: 1/ span 2;
+    }
+    .Mode-3{
+        grid-row: 3/ span 1;
+        grid-column: 1/ span 2;
+    }
+    .Mode-4 {
+        grid-row: 4/span 1;
+        grid-column: 1/ span 2;
+    }
 }
 
 
