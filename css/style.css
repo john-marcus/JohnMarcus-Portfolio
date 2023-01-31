@@ -252,8 +252,8 @@ p:last-child{
 
 .Homebutton {
     position: static;
-    text-decoration-color: white;
-    color: white;
+    text-decoration-color: white !important;
+    color: white !important;
     background-color: black;
     font-family: High Speed, sans-serif;
     text-align: center;
@@ -263,15 +263,16 @@ p:last-child{
     transition: all 0.5s;
     width: 20%;
     grid-column: 2/ span 1;
-
-
-   
-    
 }
 
 .Homebutton a:hover{
     border-radius: 40px;
     
+}
+a, a:link, a:visited, a:focus, a:hover, a:active{
+  
+  text-decoration:none;
+ 
 }
 
 .Homebutton2 {
